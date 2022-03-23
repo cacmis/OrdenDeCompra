@@ -6,8 +6,10 @@ namespace Facturas.Entidades
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public decimal  Precio  { get; set; }
-        public DateTime FechaDeAlta { get; set; }
         public decimal Descuento { get; set; }
+        public DateTime FechaAlta { get; set; }
+
+        public List<OrdenDetalle> OrdenDetalles { get; set; }
 
     }
 }
